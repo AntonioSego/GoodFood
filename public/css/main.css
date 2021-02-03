@@ -1,0 +1,281 @@
+.pozadine{
+    object-fit: contain;
+    width:100%;
+}
+.gornjihead{
+    background-color: dimgrey;
+}
+.headerlist{
+    background-color: #c1502e;
+    color: #F5F5F5;
+}
+.lijevaTraz{
+    background-color: #F5F5F5;
+    height: 600px;
+
+}
+.desnaStr{
+    background-image: url('../images/pozadina2.jpg');
+    background-size: cover;
+    height: 600px;
+
+}
+.ispod{
+    margin-left: 150px;
+}
+.padding0{
+    padding: 0;
+}
+.srcbox{
+    padding-left: 20%;
+    padding-top: 4%;
+}
+.logo{
+    border-bottom-style:solid ;
+    border-bottom-color: #c94c4c;
+}
+#logbutpoc{
+    margin-right: 5px;
+    margin-top: 10px;
+    padding-right: 10px;
+}
+
+#logotxt{
+    float: left;
+    margin-top: 20px;
+    padding: 40px;
+}
+#logoimg{
+
+    width: 64px;
+    height: 64px;
+}
+#naslovL{
+    color: #c94c4c;
+    margin-left: 10px;
+}
+
+.pomnaslov:before{
+    content:'dostavu';
+    animation: animate infinite 30s;
+  }
+  @keyframes animate {
+    10%{
+      content: 'dostavu';
+    }
+    20%{
+      content: 'pizzu';
+    }
+    30%{
+      content: 'hamburger';
+    }
+    40%{
+      content: 'kavu';
+    }
+
+  }
+  .nista{
+    text-decoration: none !important;
+    color: #F5F5F5
+  }
+
+#traziBar{
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 5px;
+    border-color: #c94c4c;
+    padding: 10px;
+    display: inline-block;
+    color: #c94c4c;
+    width: 300px;
+}
+#traziBut{
+    border-style: solid;
+    border-color: #c94c4c;
+    background-color: #c94c4c;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color: #F5F5F5;
+    padding: 10px;
+    display: inline-block;
+}
+.lijevaSlika{
+    background-image: url("../images/2.pozadina.jpg");
+    height: 400px;
+    background-size: cover;
+}
+.navTraka{
+    background-color: #c1502e;
+    font-size: 20px;
+}
+.noDec{
+    text-decoration: none !important;
+}
+.pocetnaNar{
+    background-image: url("../images/narudbaPozadina.jpg");
+    background-size: cover;
+}
+.centarDiv{
+    height: 1000px;
+}
+.desniDiv{
+    background-color: #c1502e;
+    height: 400px;
+    color: #3b3a30;
+    font-size: 29px;
+}
+#desnidiv{
+    margin-left: 10px;
+    padding: 65px;
+    font-family: URW Chancery L, cursive, monospace;
+}
+.div1{
+    background-color: #c1502e;
+    color: #F5F5F5;
+    margin: 0;
+    padding: 0;
+}
+.div2{
+    background-color: #F5F5F5;
+    color: #c1502e;
+    margin: 0;
+    padding: 0;
+}
+.naslov{
+    color: #F5F5F5;
+}
+.pizzeria{
+    height: 200px;
+    background-image: url("../images/pizzeria.jpg");
+    background-size: cover;
+}
+.fastfood{
+    height: 200px;
+    background-image: url("../images/fastfood.jpg");
+    background-size: cover;
+}
+.kavana{
+    height: 200px;
+    background-image: url("../images/kavana.jpg");
+    background-size: cover;
+}
+.restoranPinjur{
+    height: 200px;
+    background-image: url("../images/restoranPinjur.jpg");
+    background-size: cover;
+}
+.krofnara{
+    height: 200px;
+    background-image: url("../images/krofna.jpg");
+    background-size: cover;
+}
+.buttondiv1{
+    color: #c1502e;
+    background-color: #F5F5F5;
+    border: solid;
+    border-color: #F5F5F5;
+    border-radius: 10px;
+
+}
+.buttondiv2{
+    color: #F5F5F5;
+    background-color: #c1502e;
+    border: solid;
+    border-color: #c1502e;
+    border-radius: 10px;
+
+}
+.ikone{
+    margin: 35px;
+}
+.korInfo{
+    background-color: #e0e2e4;
+    min-height: 100px;
+    max-height: 1000px;
+}
+.linkoviInfo{
+    text-decoration: none !important;
+    font-size: 20px;
+    color: rgba(119, 136, 153, 0.884);;
+    margin: 40px;
+}
+.prava{
+    background-color: rgba(119, 136, 153, 0.884);
+    color: #F5F5F5;
+}
+.logolink{
+    text-decoration: none !important;
+    font-size: 20px;
+    color: #c94c4c;
+}
+.orderBody{
+    background-image: url("../images/dostava.jpg");
+    background-size: cover;
+}
+.orderDiv{
+    min-height: 1000px;
+    max-height: 2000px;
+    background-color: #F5F5F5;
+    border-right: solid;
+    border-color: #c1502e;
+    border-width: 2px;
+    box-shadow: #c1502e;
+    color: #c1502e;
+
+}
+.poredak{
+    display: inline-block;
+
+}
+.odabir{
+    margin-top: 10px;
+    padding: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    border-color: #c1502e;
+    width: 40%;
+}
+
+.dodinfo{
+    width: 150px;
+    border-style: solid;
+    border-color: #c1502e;
+    color: #c1502e;
+}
+.naruciBut{
+    margin-top: 30px;
+    text-align: center;
+}
+#naruciBut{
+    width: 400px;
+    background-color: #c1502e;
+    color: #F5F5F5;
+    padding: 5px;
+    border: none;
+}
+#slikaJela{
+    float: left;
+    width: 100px;
+    height: 100px;
+}
+#podatciJela{
+    float: left;
+    padding-left: 20px;
+}
+#jeloBut{
+    margin-left: 50px;
+    margin-top: 10px;
+}
+.divKasa{
+    color: #0275d8;
+}
+.kasaUnos{
+    width: 300px;
+    margin-left: 27%;
+}
+.potvrdaDiv{
+    color: #c1502e;
+    text-decoration: none !important;
+    font-size: 30px;
+}
