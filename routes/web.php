@@ -18,6 +18,8 @@ use Illuminate\Support\Facades\Auth;
     return view('welcome','WelcomeController@index');
 });*/
 
+URL::forceRootUrl('http://studenti.sum.ba/projekti/fsre_rwa/2020/g24');
+
 Route::get('/', 'WelcomeController@index')->name('/');
 Route::get('tehnologije', 'WelcomeController@tech')->name('tehnologije');
 Route::get('onama','OnamaController@index');
@@ -46,5 +48,3 @@ Route::namespace('Admins')->prefix('admin')->name('admin.')->middleware('can:man
     Route::get('logout/', 'Auth\AdminLoginController@logout')->name('admin.logout');
     Route::get('/', 'Auth\AdminController@index')->name('admin.dashboard');
    }) ; */
-
-
