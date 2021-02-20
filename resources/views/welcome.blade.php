@@ -20,7 +20,7 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="{{ asset('css/main.css') }}">
     </head>
     <body>
        <div class="container-fluid main_container">
@@ -48,16 +48,16 @@
                                         <div class="row">
                                             @foreach ($podatci as $item)
                                                 <div class="text-left col-md-4" id="restoraniColapse">
-                                                    
+
                                                     <ul class="list-group">
                                                         <li class="list-group-item list-group-item-danger">{{$item->naziv}}</li>
                                                         <li class="list-group-item">{{$item->grad}}</li>
                                                         <li class="list-group-item">{{$item->adresa}}</li>
                                                         <li class="list-group-item">{{$item->telefon}}</li>
-                                                    </ul>  
-                                                    
+                                                    </ul>
+
                                                 </div>
-                                            
+
                                             @endforeach
                                         </div>
                                     </div>
@@ -85,7 +85,7 @@
                             Za što god ste raspoloženi, to možete pronaći kod nas! </p>
                     </div>
                 </div>
-                
+
          <footer class="row">
             <div class="col-md-6 padding0 display-inline korInfo">
                 <br>
