@@ -2,7 +2,7 @@
 @section('content')
     @if (Session::has('cart'))
         <div class="row justify-content-center">
-            <div class="col-sm-6 col-md-6 bg-light">
+            <div class="col-sm-6 col-md-6 bg-light border border-secondary rounded-top border-bottom-0">
                 <ul class="list-group">
                     <br>
                     @foreach ($products as $product)
@@ -22,33 +22,39 @@
             </div>
         </div>
         <div class="row justify-content-center">
-            <div class="col-sm-6 col-md-6 bg-light text-center">
+            <div class="col-sm-6 col-md-6 bg-light text-center border border-secondary border-top-0 rounded-bottom">
                 <strong>Za platiti: {{ $totalPrice }}KM</strong>
                 <br>
                 <br>
                 <form action="{{ route('potvrda.narudbe') }}" method="post">
                     {{ csrf_field() }}
-
+                    
                     <input type="hidden" name="ukupno" id="" value="{{ $totalPrice }}">
-                    <input type="text" name="ime" placeholder="Vase ime i prezime" class="input-group kasaUnos">
+                    <input type="text" name="ime" placeholder="Vaše ime i prezime" class="input-group kasaUnos">
                     <br>
                     <input type="text" name="adresa" placeholder="Adresa" class="input-group kasaUnos">
                     <br>
                     <input type="text" name="telefon" placeholder="Telefon" class="input-group kasaUnos">
                     <br>
                     <hr>
-                    <button class="btn btn-primary" type="submit">Naruci</button>
+                    <button class="btn btn-primary" type="submit">Naruči</button>
                     <br>
                     <hr>
                 </form>
             </div>
         </div>
         @else
-        <div class="row">
-            <div class="col-sm-6 col-md-6">
-                <h2>Nemate jela u kosarici</h2>
+        <div class="row justify-content-center">
+            <div class="col-sm-6 col-md-6 bg-light text-center rounded border border-secondary">
+                <br>
+                <h2>Nemate jela u košarici</h2>
+                <p>Vratite se na izbor restorana,odaberite restoran i naručite iz bogatog menija.</p>
+                <hr>
+                <a href="home"><button class="btn btn-outline-success">Povratak na izbor restorana</button></a>
+                <hr>
+                <br>
             </div>
-
+        
     @endif
 
 @endsection

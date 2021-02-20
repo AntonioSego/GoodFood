@@ -24,7 +24,7 @@
     <div id="app">
         <nav class="navbar navbar-expand-md navTraka shadow-sm ">
             <div class="container">
-                <a href="/" class="text-light noDec">Pocetna</a>
+                <a href="/" class="text-light noDec">Početna</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -40,17 +40,20 @@
                         <!-- Authentication Links -->
                         @guest
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+                                <a class="nav-link text-light noDec" href="{{ route('login') }}">{{ __('Prijava') }}</a>
                             </li>
                             @if (Route::has('register'))
                                 <li class="nav-item">
-                                    <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
+                                    <a class="nav-link text-light noDec" href="{{ route('register') }}">{{ __('Registracija') }}</a>
                                 </li>
                             @endif
                         @else
                         <li class="nav-item">
                             <a href="{{route('product.shoppingCart')}}" class="nav-link text-light">
-                                <i class="fa fa-shopping-cart" aria-hidden="true"></i>Košarica
+                                Košarica
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                                    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                                  </svg>
                                 <span class="badge">{{Session::has('cart') ? Session::get('cart')->totalQty : ''}}</span>
                             </a>
                         </li>
@@ -65,6 +68,11 @@
                                                      document.getElementById('logout-form').submit();">
                                         {{ __('Odjavi se') }}
                                     </a>
+                                    @can('manage-users')
+                                        <a class="dropdown-item" href="{{ route('admin.users.index') }}">
+                                            Upravljački UI
+                                        </a>
+                                    @endcan
 
                                     <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
                                         @csrf

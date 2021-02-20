@@ -12,32 +12,29 @@
 .lijevaTraz{
     background-color: #F5F5F5;
     height: 600px;
-
+    
 }
 .desnaStr{
     background-image: url('../images/pozadina2.jpg');
     background-size: cover;
     height: 600px;
+    
+}
 
-}
-.ispod{
-    margin-left: 150px;
-}
 .padding0{
     padding: 0;
 }
-.srcbox{
-    padding-left: 20%;
-    padding-top: 4%;
-}
+
 .logo{
-    border-bottom-style:solid ;
-    border-bottom-color: #c94c4c;
+    box-shadow: inset;
 }
 #logbutpoc{
     margin-right: 5px;
     margin-top: 10px;
     padding-right: 10px;
+}
+#restoraniColapse{
+    color: #c94c4c;
 }
 
 #logotxt{
@@ -46,7 +43,7 @@
     padding: 40px;
 }
 #logoimg{
-
+    
     width: 64px;
     height: 64px;
 }
@@ -72,11 +69,7 @@
     40%{
       content: 'kavu';
     }
-
-  }
-  .nista{
-    text-decoration: none !important;
-    color: #F5F5F5
+  
   }
 
 #traziBar{
@@ -175,7 +168,7 @@
     border: solid;
     border-color: #F5F5F5;
     border-radius: 10px;
-
+    
 }
 .buttondiv2{
     color: #F5F5F5;
@@ -183,10 +176,10 @@
     border: solid;
     border-color: #c1502e;
     border-radius: 10px;
-
+    
 }
 .ikone{
-    margin: 35px;
+    margin: 35px;  
 }
 .korInfo{
     background-color: #e0e2e4;
@@ -252,7 +245,7 @@
     background-color: #c1502e;
     color: #F5F5F5;
     padding: 5px;
-    border: none;
+    border: none;   
 }
 #slikaJela{
     float: left;

@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Auth;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,7 +17,7 @@ use Illuminate\Support\Facades\Route;
 /*Route::get('/', function () {
     return view('welcome','WelcomeController@index');
 });*/
-URL::forceRootUrl('http://studenti.sum.ba/projekti/fsre_rwa/2020/g24');
+
 Route::get('/', 'WelcomeController@index')->name('/');
 Route::get('tehnologije', 'WelcomeController@tech')->name('tehnologije');
 Route::get('onama','OnamaController@index');
@@ -26,16 +27,24 @@ Route::get('/add-to-cart/{idjela}','Order@getAddToCart')->name('product.addToCar
 Route::get('/shopping-cart','Order@getCart')->name('product.shoppingCart');
 Route::view('potvrda','PotvrdaController@index');
 Route::post('potvrda','Order@checkout')->name('potvrda.narudbe');
-Route::get('control','ControlController@admin');
+
 
 
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::prefix('admin')->group(function() {
+Route::namespace('Admins')->prefix('admin')->name('admin.')->middleware('can:manage-users')->group(function(){
+
+    Route::resource('/users','UserController',['except' => ['show','create','store'] ]);
+
+});
+
+/*Route::prefix('admin')->group(function() {
     Route::get('/login','Auth\AdminLoginController@showLoginForm')->name('admin.login');
     Route::post('/login', 'Auth\AdminLoginController@login')->name('admin.login.submit');
     Route::get('logout/', 'Auth\AdminLoginController@logout')->name('admin.logout');
     Route::get('/', 'Auth\AdminController@index')->name('admin.dashboard');
-   }) ;
+   }) ; */
+
+
