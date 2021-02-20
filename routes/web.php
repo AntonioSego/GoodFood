@@ -18,7 +18,7 @@ use Illuminate\Support\Facades\Auth;
     return view('welcome','WelcomeController@index');
 });*/
 
-URL::forceRootUrl('http://studenti.sum.ba/projekti/fsre_rwa/2020/g24');
+URL::forceRootUrl('http://studenti.sum.ba/projekti/fsre_rwa/2020/g30');
 
 Route::get('/', 'WelcomeController@index')->name('/');
 Route::get('tehnologije', 'WelcomeController@tech')->name('tehnologije');
