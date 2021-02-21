@@ -18,7 +18,7 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="{{ asset('css/main.css') }}">
 </head>
 <body class="orderBody">
     <nav class="navbar navbar-expand-md navTraka shadow-sm ">
@@ -73,7 +73,7 @@
                                 </form>
                             </div>
                         </li>
-                        
+
                     @endguest
                 </ul>
             </div>
@@ -82,9 +82,9 @@
     <div class="col-md-6 orderDiv shadow-lg">
         <div class="text-center">
             <br>
-            
+
             <p>Povratak na izbor <a href="home">restorana</a></p>
-            
+
             <form action="" method="POST">
                 {{ csrf_field() }}
                 @foreach ($data as $item)
@@ -95,10 +95,10 @@
                             <a href="{{route('product.addToCart',['idjela' => $item->idjela])}}" class="btn btn-outline-primary" id="jeloBut" role="button">Ubaci</a>
                    </div>
                 @endforeach
-                
+
             </form>
         </div>
     </div>
-    
+
 </body>
 </html>

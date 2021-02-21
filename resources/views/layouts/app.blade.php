@@ -18,7 +18,7 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="{{ asset('css/main.css') }}">
 </head>
 <body class="pocetnaNar">
     <div id="app">
@@ -79,7 +79,7 @@
                                     </form>
                                 </div>
                             </li>
-                            
+
                         @endguest
                     </ul>
                 </div>
