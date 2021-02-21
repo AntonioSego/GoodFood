@@ -47,7 +47,7 @@
                                 </li>
                             @endif
                         @else
-                        
+
                             <li class="nav-item dropdown">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle text-light" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                     {{ Auth::user()->name }}
@@ -60,7 +60,7 @@
                                         {{ __('Odjavi se') }}
                                     </a>
                                     @can('manage-users')
-                                        <a class="dropdown-item" href="/">
+                                        <a class="dropdown-item" href="welcome">
                                             Povratak na pocetnu
                                         </a>
                                     @endcan
@@ -70,7 +70,7 @@
                                     </form>
                                 </div>
                             </li>
-                            
+
                         @endguest
                     </ul>
                 </div>
@@ -148,7 +148,7 @@
                                 <th scope="row">{{ $restoran->grad }}</th>
                                 <th scope="row">{{ $restoran->adresa }}</th>
                                 <th scope="row">
-                                    
+
                                 </th>
                               </tr>
                             @endforeach
@@ -178,7 +178,7 @@
                                 <th scope="row">{{ $order->adresa}}</th>
                                 <th scope="row">{{ $restoran->telefon }}</th>
                                 <th scope="row">
-                                    
+
                                 </th>
                               </tr>
                             @endforeach
@@ -188,8 +188,8 @@
             </div>
         </div>
     </div>
-   
-    
+
+
 </div>
 </div>
 </body>

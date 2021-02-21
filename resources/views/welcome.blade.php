@@ -89,11 +89,11 @@
          <footer class="row">
             <div class="col-md-6 padding0 display-inline korInfo">
                 <br>
-                <a href="" class="ikone"><img src="/images/logo.ico" alt="" width="64px" height="64px"></a>
-                <a href="https://hr-hr.facebook.com/" class="ikone"><img src="/images/faceic.png" alt="" width="64px" height="64px"></a>
-                <a href="https://www.instagram.com/" class="ikone"><img src="/images/ingic.png" alt="" width="64px" height="64px"></a>
-                <a href="https://hr.wikipedia.org/wiki/Gmail" class="ikone"><img src="/images/mailic.png" alt="" width="64px" height="64px"></a>
-                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="ikone"><img src="/images/youtubeico.png" alt="" width="64px" height="64px"></a>
+                <a href="" class="ikone"><img src="{{ asset('/images/logo.ico') }}" alt="" width="64px" height="64px"></a>
+                <a href="https://hr-hr.facebook.com/" class="ikone"><img src="{{ asset('/images/faceic.png') }}" alt="" width="64px" height="64px"></a>
+                <a href="https://www.instagram.com/" class="ikone"><img src="{{ asset('/images/ingic.png') }}" alt="" width="64px" height="64px"></a>
+                <a href="https://hr.wikipedia.org/wiki/Gmail" class="ikone"><img src="{{ asset('/images/mailic.png') }}" alt="" width="64px" height="64px"></a>
+                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="ikone"><img src="{{ asset('/images/youtubeico.png') }}" alt="" width="64px" height="64px"></a>
                 <br>
             </div>
             <div class="col-md-6 padding0 display-inline korInfo">

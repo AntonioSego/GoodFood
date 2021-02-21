@@ -23,7 +23,7 @@
 <body class="orderBody">
     <nav class="navbar navbar-expand-md navTraka shadow-sm ">
         <div class="container">
-            <a href="/" class="text-light noDec">Početna</a>
+            <a href="welcome" class="text-light noDec">Početna</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -89,7 +89,7 @@
                 {{ csrf_field() }}
                 @foreach ($data as $item)
                    <div class="odabir shadow d-inline-block">
-                            <img src="{{$item->imgpath}}" alt="" id="slikaJela">
+                            <img src="{{ asset($item->imgpath) }}" alt="" id="slikaJela">
                             <p id="podatciJela">{{$item->jelo}}</p>
                             <p id="podatciJela">{{$item->cijena}}km</p>
                             <a href="{{route('product.addToCart',['idjela' => $item->idjela])}}" class="btn btn-outline-primary" id="jeloBut" role="button">Ubaci</a>
