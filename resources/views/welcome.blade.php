@@ -27,7 +27,7 @@
                 <div class="row">
                     <div class="col-md-6 lijevaTraz padding0">
                         <div class="logo display-inline shadow">
-                            <a href=""><img id="logoimg" src="../images/logo.ico" alt="GetFood"></a>
+                            <a href=""><img id="logoimg" src="{{ asset('/images/logo.ico') }}" alt="GetFood"></a>
                             <a href="" class="logolink">GetFood</a>
                         </div>
                         <div class="text-center" id="naslovL">
