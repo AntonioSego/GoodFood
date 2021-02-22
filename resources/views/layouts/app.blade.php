@@ -24,7 +24,7 @@
     <div id="app">
         <nav class="navbar navbar-expand-md navTraka shadow-sm ">
             <div class="container">
-                <a href="home" class="text-light noDec">Početna</a>
+                <a href="{{ route('/') }}" class="text-light noDec">Početna</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
                 </button>

@@ -89,7 +89,7 @@
                 {{ csrf_field() }}
                 @foreach ($data as $item)
                    <div class="odabir shadow d-inline-block">
-                            <img src="{{ asset($item->imgpath) }}" alt="" id="slikaJela">
+                            <img src="{{ asset('images/' . $item->imgpath) }}" alt="" id="slikaJela">
                             <p id="podatciJela">{{$item->jelo}}</p>
                             <p id="podatciJela">{{$item->cijena}}km</p>
                             <a href="{{route('product.addToCart',['idjela' => $item->idjela])}}" class="btn btn-outline-primary" id="jeloBut" role="button">Ubaci</a>

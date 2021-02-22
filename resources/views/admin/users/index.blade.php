@@ -60,7 +60,7 @@
                                         {{ __('Odjavi se') }}
                                     </a>
                                     @can('manage-users')
-                                        <a class="dropdown-item" href="welcome">
+                                        <a class="dropdown-item" href="{{ route('/') }}">
                                             Povratak na pocetnu
                                         </a>
                                     @endcan
