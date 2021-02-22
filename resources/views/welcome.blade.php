@@ -63,7 +63,7 @@
                                     </div>
                                 </div>
                                 <p class="text-muted ">
-                                    Za online naruđžbu trebate se <a href="login" class="text-primary">prijavit</a>.
+                                    Za online naruđžbu trebate se <a href="login" class="text-primary">prijaviti</a>.
                                   </p>
                         </div>
                     </div>

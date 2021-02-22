@@ -1,6 +1,9 @@
 @extends('layouts.app')
 @section('content')
     @if (Session::has('cart'))
+    <div class="container">
+
+
         <div class="row justify-content-center">
             <div class="col-sm-6 col-md-6 bg-light border border-secondary rounded-top border-bottom-0">
                 <ul class="list-group">
@@ -11,7 +14,7 @@
                             <strong>{{ $product['item']['jelo'] }}</strong>
                             <span class="label label-success">{{ $product['price']}}</span>
                             <div class="btn-group">
-                                
+
 
                             </div>
                         </li>
@@ -28,7 +31,7 @@
                 <br>
                 <form action="{{ route('potvrda.narudbe') }}" method="post">
                     {{ csrf_field() }}
-                    
+
                     <input type="hidden" name="ukupno" id="" value="{{ $totalPrice }}">
                     <input type="text" name="ime" placeholder="Vaše ime i prezime" class="input-group kasaUnos">
                     <br>
@@ -54,7 +57,7 @@
                 <hr>
                 <br>
             </div>
-        
+    </div>    
     @endif
 
 @endsection

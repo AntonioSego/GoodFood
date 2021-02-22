@@ -32,7 +32,7 @@
 			<div class="sidebar">
 		<div class="aboutus">
 			<h2 class="heading">O nama</h2>
-		<img id="avatar-aboutus" src="../images/Dario.jpg">
+		<img id="avatar-aboutus" src= "{{ asset('/images/Dario.jpg') }}">
 		<div class="shape"></div>
 			<div class="shape1"></div>
 			<p id="text-aboutus">
@@ -42,7 +42,7 @@
 			<div class="sidebar">
 				<div class="aboutus">
 
-				<img id="avatar-aboutus" src="../images/Sego.jpg">
+				<img id="avatar-aboutus" src="{{ asset('/images/Sego.jpg') }}">
 				<div class="shape"></div>
 					<div class="shape1"></div>
 					<p id="text-aboutus">
@@ -52,7 +52,7 @@
 
 					<div class="sidebar">
 		<div class="aboutus">
-		<img id="avatar-aboutus" src="../images/Kristijan.jpg">
+		<img id="avatar-aboutus" src="{{ asset('/images/Kristijan.jpg') }}">
 		<div class="shape"></div>
 			<div class="shape1"></div>
 			<p id="text-aboutus">
