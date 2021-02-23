@@ -14,8 +14,7 @@
                             <strong>{{ $product['item']['jelo'] }}</strong>
                             <span class="label label-success">{{ $product['price']}}</span>
                             <div class="btn-group">
-
-
+                                <a class="btn btn-primary" href="{{ route('product.reduceByOne',['idjela' => $product['item']['idjela']]) }}">Izbaci</a>
                             </div>
                         </li>
                         <br>
@@ -23,7 +22,7 @@
                 </ul>
 
             </div>
-        </div>
+
         <div class="row justify-content-center">
             <div class="col-sm-6 col-md-6 bg-light text-center border border-secondary border-top-0 rounded-bottom">
                 <strong>Za platiti: {{ $totalPrice }}KM</strong>
@@ -46,8 +45,11 @@
                 </form>
             </div>
         </div>
+      </div>
+    </div>
         @else
-        <div class="row justify-content-center">
+        <div class="container">
+         <div class="row justify-content-center">
             <div class="col-sm-6 col-md-6 bg-light text-center rounded border border-secondary">
                 <br>
                 <h2>Nemate jela u košarici</h2>
@@ -57,7 +59,8 @@
                 <hr>
                 <br>
             </div>
-    </div>    
+          </div>
+    </div>
     @endif
 
 @endsection

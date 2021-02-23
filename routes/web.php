@@ -26,6 +26,7 @@ Route::get('onama','OnamaController@index');
 Route::post('order', 'Order@index')->name('order.menu');
 Route::get('order', 'Order@index')->name('order.menu');
 Route::get('/add-to-cart/{idjela}','Order@getAddToCart')->name('product.addToCart');
+Route::get('/reduce/{idjela}','Order@getReduceByOne')->name('product.reduceByOne');
 Route::get('/shopping-cart','Order@getCart')->name('product.shoppingCart');
 Route::view('potvrda','PotvrdaController@index');
 Route::post('potvrda','Order@checkout')->name('potvrda.narudbe');

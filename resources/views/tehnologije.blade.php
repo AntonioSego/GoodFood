@@ -25,16 +25,16 @@
     <body>
         <div class="container justify-content-center">
             <div>
-                <img src="../images/laravelbc.jpg" alt="" width="500px" height="300px">
+                <img src="{{ asset('/images/laravelbc.jpg') }}" alt="" width="500px" height="300px">
             </div>
             <div>
-                <img src="../images/bootstrapbc.gif" alt="" width="500px" height="300px" >
+                <img src="{{ asset('/images/bootstrapbc.gif') }}" alt="" width="500px" height="300px" >
             </div>
             <div>
-                <img src="../images/htmlbc.png" alt="" width="500px" height="300px">
+                <img src="{{ asset('/images/hmlbc.png') }}" alt="" width="500px" height="300px">
             </div>
             <div>
-                <img src="../images/mysqlbc.jpg" alt="" width="500px" height="300px">
+                <img src="{{ asset('/images/mysqlbc.jpg') }}" alt="" width="500px" height="300px">
             </div>
 
         </div>

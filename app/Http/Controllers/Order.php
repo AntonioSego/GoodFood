@@ -37,13 +37,22 @@ class Order extends Controller
     public function getAddToCart(Request $request,$idjela){
 
         $product = Menurestorana::find($idjela);
-    
+
         $oldCart = Session::has('cart') ? Session::get('cart') : null;
         $cart = new Cart($oldCart);
         $cart->add($product,$product->idjela);
 
         $request->session()->put('cart',$cart);
-        return redirect()->route('home'); 
+        return redirect()->route('home');
+    }
+
+    public function getReduceByOne($idjela)
+    {
+        $oldCart = Session::has('cart') ? Session::get('cart') : null;
+        $cart = new Cart($oldCart);
+        $cart->reduceByOne($idjela);
+        Session::put('cart', $cart);
+        return redirect()->route('product.shoppingCart');
     }
 
     public function getCart()

@@ -23,7 +23,7 @@
 <body>
     <nav class="navbar navbar-expand-md navTraka shadow-sm ">
         <div class="container">
-            <a class="text-light noDec" href="welcome">Pocetna</a>
+            <a class="text-light noDec" href="{{ route('/') }}">Pocetna</a>
 
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                 <span class="navbar-toggler-icon"></span>
@@ -61,11 +61,14 @@
             <br>
             <br>
             <p>Vasa narudba je prihvacena</p>
-            <a class="btn btn-success" href="/" href="{{ route('logout') }}"
+            <a class="" href="{{ route('logout') }}"
                  onclick="event.preventDefault();
-                 document.getElementById('logout-form').submit();">
-                {{ __('Odjavi se') }}
+                     document.getElementById('logout-form').submit();">
+                      {{ __('Odjavi se') }}
             </a>
+            <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                @csrf
+            </form>
         </div>
 
     </div>
