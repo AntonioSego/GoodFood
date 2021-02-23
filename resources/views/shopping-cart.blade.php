@@ -2,8 +2,6 @@
 @section('content')
     @if (Session::has('cart'))
     <div class="container">
-
-
         <div class="row justify-content-center">
             <div class="col-sm-6 col-md-6 bg-light border border-secondary rounded-top border-bottom-0">
                 <ul class="list-group">
@@ -22,7 +20,7 @@
                 </ul>
 
             </div>
-
+          </div>  
         <div class="row justify-content-center">
             <div class="col-sm-6 col-md-6 bg-light text-center border border-secondary border-top-0 rounded-bottom">
                 <strong>Za platiti: {{ $totalPrice }}KM</strong>
@@ -46,9 +44,9 @@
             </div>
         </div>
       </div>
-    
+
         @else
-        <div class="container">
+    <div class="container">
          <div class="row justify-content-center">
             <div class="col-sm-6 col-md-6 bg-light text-center rounded border border-secondary">
                 <br>
@@ -59,7 +57,7 @@
                 <hr>
                 <br>
             </div>
-          </div>
+        </div>
     </div>
     @endif
 
