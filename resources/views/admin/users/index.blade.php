@@ -7,7 +7,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>GetFood</title>
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
@@ -163,6 +163,7 @@
                         <thead>
                           <tr>
                             <th scope="col">#</th>
+                            <th scope="col">Jela</th>
                             <th scope="col">Cijena</th>
                             <th scope="col">Ime</th>
                             <th scope="col">Adresa</th>
@@ -173,6 +174,7 @@
                             @foreach ($orders as $order)
                              <tr>
                                 <th scope="row">{{ $order->id }}</th>
+                                <th scope="row">{{ substr($order->jela,44,48) }}</th>
                                 <th scope="row">{{ $order->cijena }}</th>
                                 <th scope="row">{{ $order->ime }}</th>
                                 <th scope="row">{{ $order->adresa}}</th>

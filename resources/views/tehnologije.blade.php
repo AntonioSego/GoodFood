@@ -9,7 +9,7 @@
         <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>GetFood</title>
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
@@ -31,7 +31,7 @@
                 <img src="{{ asset('/images/bootstrapbc.gif') }}" alt="" width="500px" height="300px" >
             </div>
             <div>
-                <img src="{{ asset('/images/hmlbc.png') }}" alt="" width="500px" height="300px">
+                <img src="{{ asset('/images/htmlbc.png') }}" alt="" width="500px" height="300px">
             </div>
             <div>
                 <img src="{{ asset('/images/mysqlbc.jpg') }}" alt="" width="500px" height="300px">
